@@ -11,7 +11,7 @@ html {
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   font-weight: lighter;
 }
 
@@ -22,3 +22,88 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+
+header {
+  background-image: url("../images/apple-pie.jpg");
+  height: 300px;
+  background-position: 0 0;
+  background-size: cover;
+
+}
+
+section{
+  padding: 30px;
+}
+
+.apple-pie {
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.intro{
+  text-align: justify;
+  padding-bottom: 20px;
+  line-height: 25px;
+  color: rgb(48, 46, 46);
+}
+
+.recipe-info {
+  width: 400px;
+  height: 80px;
+  margin: auto;
+  display: block;
+  padding-bottom: 15px;
+}
+
+ol {
+  padding-left: 50px;
+}
+
+.title2{
+  padding-bottom: 20px;
+  color: rgb(48, 46, 46);
+}
+
+.ingredients{
+  list-style-type: none;
+  padding-bottom: 30px;
+}
+.ingredients li::before{
+  content: "-";
+  margin-right: 5px;
+}
+.ingredients li{
+  line-height: 25px;
+  color: rgb(48, 46, 46);
+}
+
+.cooking-info{
+  width: 300px;
+  height: 80px;
+  margin: auto;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.title3{
+  padding-bottom: 30px;
+  color: rgb(48, 46, 46);
+}
+
+.instructions {
+  list-style: none;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+.instructions li{
+  line-height: 25px;
+  color: rgb(48, 46, 46);
+  counter-increment: listcounter;
+}
+
+.instructions li::marker{
+  content: counter(listcounter) ") ";
+}
